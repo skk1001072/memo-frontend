@@ -11,7 +11,7 @@ export default function App() {
 
   // 1장에서는 백엔드가 없으므로 임시 데이터로 화면만 확인한다.
   useEffect(() => {
-    setMemos([{ id: 1, content: "첫 번째 메모(임시 데이터)" }]);
+    setMemos([{ id: 1, content: "첫 번째 메모(임시 데이터!!!)" }]);
   }, []);
 
   // 아래 함수들은 3장부터 실제 fetch 호출로 채운다.
@@ -27,7 +27,7 @@ export default function App() {
       <h1>📝 메모장</h1>
       <div style={{ display: "flex", gap: 8 }}>
         <input value={text} onChange={(e) => setText(e.target.value)}
-          placeholder="메모를 입력하세요" style={{ flex: 1, padding: 8 }} />
+          placeholder="메모를 입력하세요!!" style={{ flex: 1, padding: 8 }} />
         <button onClick={addMemo}>추가</button>
       </div>
       <ul>
