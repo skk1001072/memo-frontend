@@ -1,4 +1,4 @@
-# self-intro
+# self-intro-frontend
 
 React(Vite) + FastAPI 풀스택 프로젝트의 프론트엔드입니다. 백엔드 API를 호출해 개인 소개 정보를 화면에 보여줍니다.
 
@@ -13,7 +13,7 @@ React(Vite) + FastAPI 풀스택 프로젝트의 프론트엔드입니다. 백엔
 | --- | --- |
 | `/` | API 연동 실습 페이지 (`src/App.jsx`). `VITE_API_URL`에 설정된 백엔드의 `GET /profile`을 호출해 이름·경력·학력·발간 자료·관심사를 렌더링합니다. |
 | `/intro/index.html` | 개인 소개 페이지 (정적 HTML, `public/intro`) |
-| `memo-backend` (별도 저장소) | FastAPI로 구현한 백엔드 API |
+| `self-intro-backend` (별도 저장소) | FastAPI로 구현한 백엔드 API |
 
 ## 로컬 실행
 
@@ -29,4 +29,4 @@ npm run dev
 - Vercel: https://memo-frontend-kohl.vercel.app
 - 개인 소개 페이지: https://memo-frontend-kohl.vercel.app/intro/index.html
 - 백엔드(Render) Swagger UI: https://memo-backend-17xm.onrender.com/docs
-- 백엔드 저장소: https://github.com/skk1001072/memo-backend
+- 백엔드 저장소: https://github.com/skk1001072/self-intro-backend
