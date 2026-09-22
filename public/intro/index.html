@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+  <h1>SK를 소개합니다</h1>
+   <button id="theme-btn">다크모드 전환</button>
+</header>
+
+<p style="text-align:center; margin: 12px 0;">
+  <a href="/">→ 프론트엔드·백엔드 연동 실습 페이지 보기</a>
+</p>
+
+<!-- main에 cards 이름표를 붙인다. 다음 단계의 CSS가 이 이름으로 카드들을 가로 배치한다.
+     제목을 header로 빼는 이유는 main이 '카드들을 담는 컨테이너' 역할을 맡기 때문이다 -->
+<main class="cards">
+
+  <!-- article: 독립적으로 의미있는 '카드 하나' -->
+  <article class="card">
+    <img src="https://placehold.co/120x120" alt="김선경 프로필 사진">
+    <h2>김선경</h2>
+    <p class="role">디지털금융 MBA 7기</p>
+    <p>지수회사에서 공급망 연구를 맡고 있습니다.</p>
+    <a href="https://github.com/skk1001072">GitHub 프로필</a>
+  </article>
+   <article class="card">
+    <h2>관심분야</h2>
+    <p class="role">무엇을 파고드나: AI로 내 인생 퀀텀점프 시켜주길 바라며 공부하는 중</p>
+    <p>지수회사에서 공급망 연구를 맡고 있습니다.</p>
+  </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

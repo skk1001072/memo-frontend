@@ -1,16 +1,31 @@
-# React + Vite
+# memo-frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React(Vite) + FastAPI 풀스택 메모 앱의 프론트엔드입니다. 백엔드 API를 호출해 메모를 조회·추가·삭제합니다.
 
-Currently, two official plugins are available:
+## 프로젝트 소개
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 개인 소개 페이지와, 백엔드 API 연동 결과를 보여주는 메모장 페이지 두 개로 구성되어 있습니다.
+- 두 페이지는 서로 링크로 연결되어 있어 어느 쪽에서 접속해도 다른 쪽으로 이동할 수 있습니다.
 
-## React Compiler
+## 주요 구성
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| 경로 | 내용 |
+| --- | --- |
+| `/` | 메모 CRUD 페이지 (`src/App.jsx`). `VITE_API_URL`에 설정된 백엔드 API(GET/POST/DELETE `/memos`)를 호출합니다. |
+| `/intro/index.html` | 개인 소개 페이지 (정적 HTML, `public/intro`) |
+| `memo-backend` (별도 저장소) | FastAPI로 구현한 백엔드 API |
 
-## Expanding the ESLint configuration
+## 로컬 실행
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+`.env`에 `VITE_API_URL`로 백엔드 주소를 지정합니다 (기본값 `http://localhost:8000`).
+
+## 배포 주소
+
+- Vercel: (배포 후 채우기)
+- 백엔드(Render) Swagger UI: (배포 후 채우기)
+- 백엔드 저장소: https://github.com/skk1001072/memo-backend
