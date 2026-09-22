@@ -11,7 +11,7 @@ export default function App() {
 
   // 1장에서는 백엔드가 없으므로 임시 데이터로 화면만 확인한다.
   useEffect(() => {
-    setMemos([{ id: 1, content: "첫 번째 메모(임시 데이터!!!)" }]);
+    setMemos([{ id: 1, content: "첫 번째 메모(임시 데이터~!~~)" }]);
   }, []);
 
   // 아래 함수들은 3장부터 실제 fetch 호출로 채운다.
