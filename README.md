@@ -1,17 +1,17 @@
 # memo-frontend
 
-React(Vite) + FastAPI 풀스택 메모 앱의 프론트엔드입니다. 백엔드 API를 호출해 메모를 조회·추가·삭제합니다.
+React(Vite) + FastAPI 풀스택 프로젝트의 프론트엔드입니다. 백엔드 API를 호출해 개인 소개 정보를 화면에 보여줍니다.
 
 ## 프로젝트 소개
 
-- 개인 소개 페이지와, 백엔드 API 연동 결과를 보여주는 메모장 페이지 두 개로 구성되어 있습니다.
+- 개인 소개 페이지와, 백엔드 API 연동 결과를 보여주는 페이지 두 개로 구성되어 있습니다.
 - 두 페이지는 서로 링크로 연결되어 있어 어느 쪽에서 접속해도 다른 쪽으로 이동할 수 있습니다.
 
 ## 주요 구성
 
 | 경로 | 내용 |
 | --- | --- |
-| `/` | 메모 CRUD 페이지 (`src/App.jsx`). `VITE_API_URL`에 설정된 백엔드 API(GET/POST/DELETE `/memos`)를 호출합니다. |
+| `/` | API 연동 실습 페이지 (`src/App.jsx`). `VITE_API_URL`에 설정된 백엔드의 `GET /profile`을 호출해 이름·경력·학력·발간 자료·관심사를 렌더링합니다. |
 | `/intro/index.html` | 개인 소개 페이지 (정적 HTML, `public/intro`) |
 | `memo-backend` (별도 저장소) | FastAPI로 구현한 백엔드 API |
 
