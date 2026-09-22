@@ -1,4 +1,4 @@
-# memo-frontend
+# self-intro
 
 React(Vite) + FastAPI 풀스택 프로젝트의 프론트엔드입니다. 백엔드 API를 호출해 개인 소개 정보를 화면에 보여줍니다.
 
