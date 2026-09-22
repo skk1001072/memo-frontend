@@ -26,6 +26,7 @@ npm run dev
 
 ## 배포 주소
 
-- Vercel: (배포 후 채우기)
-- 백엔드(Render) Swagger UI: (배포 후 채우기)
+- Vercel: https://memo-frontend-kohl.vercel.app
+- 개인 소개 페이지: https://memo-frontend-kohl.vercel.app/intro/index.html
+- 백엔드(Render) Swagger UI: https://memo-backend-17xm.onrender.com/docs
 - 백엔드 저장소: https://github.com/skk1001072/memo-backend
